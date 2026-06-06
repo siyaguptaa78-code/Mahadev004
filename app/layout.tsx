@@ -1,33 +1,33 @@
 import type { Metadata } from "next";
-import { Archivo, JetBrains_Mono } from "next/font/google";
+import { Outfit, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Layout/Navbar";
 import Footer from "../components/Layout/Footer";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Reddy Book ID Official | Secure & Instant Online Betting Exchange",
-  description: "Secure your verified Reddy Book ID for instant withdrawals, live sports insights, and 100% fair play. Start winning now.",
-  keywords: "Reddy Book, Reddy Book ID, Reddy Book Login, Reddy Book Register, Buy Reddy Book ID",
-  authors: [{ name: "Reddy Book" }],
-  creator: "Reddy Book",
+  title: "Mahadev Book - Mahadev Book ID | Mahadev Book Official",
+  description: "Join Mahadev Book for secure betting on cricket, casino & more. Fast login, UPI deposits & 24/7 support. Win big with Mahadev Book.",
+  keywords: "Mahadev Book, Mahadev Book ID, Mahadev Book Login, Mahadev Book Register, Buy Mahadev Book ID",
+  authors: [{ name: "Mahadev Book" }],
+  creator: "Mahadev Book",
   robots: "index, follow",
   openGraph: {
-    title: "Reddy Book - Bold Sports betting platform",
-    description: "Secure your verified Reddy Book ID for instant withdrawals, live sports insights, and 100% fair play. Start winning now.",
+    title: "Mahadev Book - India's Most Trusted Online Betting Platform",
+    description: "Join Mahadev Book for secure betting on cricket, casino & more. Fast login, UPI deposits & 24/7 support. Win big with Mahadev Book.",
     url: "https://mahadeevbook.com",
-    siteName: "Reddy Book",
+    siteName: "Mahadev Book",
     locale: "en_IN",
     type: "website",
   }
@@ -41,10 +41,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${archivo.variable} ${jetbrainsMono.variable} h-full antialiased dark`}
+      className={`${outfit.variable} ${playfair.variable} h-full antialiased dark`}
       style={{ colorScheme: 'dark' }}
     >
-      <body className="min-h-full flex flex-col bg-[#050505] text-zinc-100 font-sans selection:bg-red-500/20 selection:text-red-400">
+      <body className="min-h-full flex flex-col bg-[#050505] text-zinc-100 font-sans selection:bg-cyan-500/20 selection:text-cyan-300">
         <Navbar />
         <main className="flex-grow pt-20">
           {children}

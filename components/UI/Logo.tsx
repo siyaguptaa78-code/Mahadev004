@@ -3,19 +3,21 @@ import React from 'react';
 export default function Logo({ className = "w-10 h-10" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-3 group`}>
-      <div className={`${className} bg-red-955/20 border border-red-500/40 rounded-xl flex items-center justify-center shadow-lg shadow-red-500/10 group-hover:scale-105 group-hover:shadow-red-500/20 transition-all duration-300`}>
-        {/* Dynamic Red Shield & Trishul SVG */}
-        <svg viewBox="0 0 100 100" className="w-6 h-6 text-red-500 fill-current" xmlns="http://www.w3.org/2000/svg">
-          {/* Shield backdrop */}
-          <path d="M20 20 L50 10 L80 20 C80 50, 50 85, 50 85 C50 85, 20 50, 20 20 Z" fill="none" stroke="currentColor" strokeWidth="4" />
-          {/* Trishul inside shield */}
-          <path d="M 50 25 C 48 35, 48 40, 50 50 C 52 40, 52 35, 50 25 Z" />
-          <path d="M 32 38 C 36 52, 64 52, 68 38 C 62 47, 58 45, 50 45 C 50 55, 50 65, 50 65 M 32 38" fill="none" stroke="currentColor" strokeWidth="4" />
-          <line x1="50" y1="45" x2="50" y2="72" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+      <div className={`${className} rounded-full bg-gradient-to-br from-yellow-300 via-amber-500 to-yellow-600 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300`}>
+        {/* Gold Trishul SVG */}
+        <svg viewBox="0 0 100 100" className="w-6 h-6 text-black fill-current" xmlns="http://www.w3.org/2000/svg">
+          {/* Trishul Prongs */}
+          <path d="M 50 15 C 47 30, 47 40, 50 55 C 53 40, 53 30, 50 15 Z" />
+          <path d="M 50 50 C 40 50, 30 45, 25 25 C 27 35, 33 43, 45 44 C 45 35, 45 25, 45 25" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
+          <path d="M 50 50 C 60 50, 70 45, 75 25 C 73 35, 67 43, 55 44 C 55 35, 55 25, 55 25" fill="none" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
+          {/* Damru (small drum) shape in middle */}
+          <path d="M 42 58 L 58 58 L 46 70 L 54 70 Z" />
+          {/* Shaft */}
+          <rect x="48" y="70" width="4" height="20" rx="2" />
         </svg>
       </div>
-      <span className="text-white font-mono font-black text-xl tracking-wider group-hover:text-red-500 transition-colors">
-        REDDY<span className="text-red-500 font-light">_BOOK</span>
+      <span className="text-white font-serif font-bold text-xl tracking-wide group-hover:text-amber-400 transition-colors">
+        Mahadev <span className="text-amber-500 font-sans font-light">Book</span>
       </span>
     </div>
   );

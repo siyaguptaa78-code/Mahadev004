@@ -4,14 +4,14 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from '../UI/Logo';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Blog', path: '/blog' },
-  { name: 'Betting App', path: '/reddy-betting-app' },
-  { name: 'Book ID', path: '/reddy-book-id' },
+  { name: 'Betting App', path: '/mahadev-betting-app' },
+  { name: 'Book ID', path: '/mahadev-book-id' },
   { name: 'FAQ', path: '/faq' },
   { name: 'Contact', path: '/contact' }
 ];
@@ -33,12 +33,12 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappUrl = "https://wa.me/918872189331";
+  const whatsappUrl = "https://wa.me/919412834207";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-black border-b border-red-500/20 py-3' 
+        ? 'bg-black/95 backdrop-blur-md border-b border-amber-500/10 py-3 shadow-lg shadow-black/50' 
         : 'bg-transparent py-5'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,13 +55,14 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.path}
-                  className={`px-3 py-1.5 text-xs font-black tracking-wider uppercase transition-all duration-200 border border-transparent ${
-                    isActive 
-                      ? 'text-red-500 border-red-500/20 bg-red-500/5' 
-                      : 'text-zinc-400 hover:text-white hover:bg-zinc-900'
+                  className={`relative px-4 py-2 text-sm font-medium transition-colors duration-200 group ${
+                    isActive ? 'text-amber-400' : 'text-zinc-300 hover:text-amber-300'
                   }`}
                 >
                   {item.name}
+                  <span className={`absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-amber-400 to-yellow-600 rounded-full transition-transform duration-300 origin-left ${
+                    isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                  }`} />
                 </Link>
               );
             })}
@@ -72,17 +73,18 @@ export default function Navbar() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-xs font-black uppercase tracking-wider text-zinc-300 hover:text-white transition-colors"
+              className="px-4 py-2 border border-amber-500/50 text-amber-400 font-semibold text-xs uppercase tracking-wider rounded-lg hover:bg-amber-500/10 transition-all duration-300"
             >
-              Log In
+              Login
             </a>
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-red-650 hover:bg-red-700 text-white font-black text-xs uppercase tracking-widest transition-all shadow-md shadow-red-650/20 flex items-center gap-1.5"
+              className="px-5 py-2 bg-gradient-to-r from-yellow-400 via-amber-500 to-yellow-600 text-black font-extrabold text-xs uppercase tracking-wider rounded-lg hover:brightness-110 transition-all duration-300 shadow-md shadow-amber-500/20 flex items-center gap-1.5"
             >
-              <Zap className="w-3.5 h-3.5 fill-current text-white" /> Get ID
+              <MessageCircle className="w-3.5 h-3.5 fill-current" />
+              Get ID
             </a>
           </div>
 
@@ -90,7 +92,7 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-zinc-400 hover:text-red-500 transition-colors p-2"
+              className="text-zinc-400 hover:text-amber-400 transition-colors p-2"
               aria-label="Toggle mobile menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -101,7 +103,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-zinc-950 border-b border-red-500/30 py-4 px-4 sm:px-6">
+        <div className="lg:hidden bg-zinc-950 border-b border-amber-500/15 py-4 px-4 sm:px-6">
           <nav className="flex flex-col gap-3">
             {navItems.map((item) => {
               const isActive = pathname === item.path;
@@ -110,10 +112,10 @@ export default function Navbar() {
                   key={item.name}
                   href={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-3 py-2.5 text-xs font-black uppercase tracking-widest transition-colors ${
+                  className={`px-3 py-2.5 rounded-lg text-sm font-semibold transition-colors ${
                     isActive 
-                      ? 'bg-red-500/10 text-red-500 border border-red-500/20' 
-                      : 'text-zinc-300 hover:bg-zinc-900'
+                      ? 'bg-amber-500/10 text-amber-400 border border-amber-500/20' 
+                      : 'text-zinc-300 hover:bg-zinc-900 hover:text-white'
                   }`}
                 >
                   {item.name}
@@ -126,18 +128,18 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-2.5 border border-zinc-700 hover:border-red-500 text-zinc-300 font-bold text-xs uppercase tracking-wider rounded"
+                className="w-full text-center py-2.5 border border-amber-500/30 text-amber-400 font-bold text-sm rounded-lg hover:bg-amber-500/5 transition-colors"
               >
-                Log In
+                Login
               </a>
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="w-full text-center py-2.5 bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-widest rounded flex items-center justify-center gap-2"
+                className="w-full text-center py-2.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-black font-black text-sm rounded-lg hover:brightness-115 transition-all flex items-center justify-center gap-2"
               >
-                <Zap className="w-4 h-4 fill-current text-white" />
+                <MessageCircle className="w-4 h-4 fill-current" />
                 Get Verified ID
               </a>
             </div>

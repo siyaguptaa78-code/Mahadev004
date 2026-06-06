@@ -14,13 +14,13 @@ export default function BlogListingPage() {
         {/* Header */}
         <Reveal>
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-black text-white uppercase mb-4">
-              Reddy Book <span className="text-red-500">Insights</span>
+            <h1 className="text-4xl md:text-5xl font-serif font-black text-white mb-4">
+              Mahadev Book <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-amber-500">Insights</span>
             </h1>
-            <p className="text-zinc-555 text-sm max-w-xl mx-auto font-light">
+            <p className="text-zinc-400 text-sm max-w-xl mx-auto font-light">
               Stay ahead with our latest betting guides, legal compliance updates, and match analytics.
             </p>
-            <div className="w-16 h-0.5 bg-red-500 mx-auto mt-4"></div>
+            <div className="w-16 h-0.5 bg-amber-500 mx-auto rounded-full mt-4"></div>
           </div>
         </Reveal>
 
@@ -28,36 +28,36 @@ export default function BlogListingPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {blogPosts.map((post, idx) => (
             <Reveal key={post.slug} yOffset={40} delay={idx * 0.1}>
-              <div className="bold-card bold-card-hover rounded p-6 border border-zinc-900 flex flex-col justify-between h-full">
+              <div className="glass-card glass-card-hover rounded-2xl p-6 border border-zinc-850 flex flex-col justify-between h-full">
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-red-500 uppercase tracking-widest bg-red-500/10 border border-red-500/20 px-2.5 py-1">
+                    <span className="text-xs font-semibold text-amber-500 uppercase tracking-wider bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
                       {post.category}
                     </span>
                     <span className="text-2xl">{post.icon}</span>
                   </div>
                   
-                  <h2 className="text-lg font-bold text-white hover:text-red-500 transition-colors uppercase">
+                  <h2 className="text-xl font-serif font-bold text-white hover:text-amber-400 transition-colors">
                     <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                   </h2>
                   
-                  <p className="text-zinc-400 text-xs font-light leading-relaxed">
+                  <p className="text-zinc-455 text-sm font-light leading-relaxed">
                     {post.excerpt}
                   </p>
                 </div>
                 
-                <div className="mt-8 pt-4 border-t border-zinc-950 flex items-center justify-between text-[10px] text-zinc-500 uppercase tracking-widest font-bold font-mono">
+                <div className="mt-8 pt-4 border-t border-zinc-900 flex items-center justify-between text-xs text-zinc-500">
                   <div className="flex items-center gap-1">
-                    <Calendar className="w-3.5 h-3.5 text-red-500" />
+                    <Calendar className="w-3.5 h-3.5" />
                     <span>{post.date}</span>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5 text-red-500" />
+                      <Clock className="w-3.5 h-3.5" />
                       <span>{post.readTime}</span>
                     </div>
-                    <Link href={`/blog/${post.slug}`} className="text-red-500 font-semibold hover:text-red-400 flex items-center gap-1 transition-colors">
-                      Read <ArrowRight className="w-3 h-3" />
+                    <Link href={`/blog/${post.slug}`} className="text-amber-500 font-semibold hover:text-amber-400 flex items-center gap-1 transition-colors">
+                      Read More <ArrowRight className="w-3 h-3" />
                     </Link>
                   </div>
                 </div>
