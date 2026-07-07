@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="space-y-5">
             <Logo />
             <p className="text-zinc-400 leading-relaxed font-light">
-              India's most trusted sports insights and fantasy analytics platform. Providing live odds, player analysis, and verified betting IDs nationwide since 2018.
+              India's most trusted sports insights and fantasy analytics platform. Providing live odds, player analysis and verified betting IDs across the country since 2018
             </p>
             <div className="flex gap-3 text-amber-500">
               <Shield className="w-5 h-5 opacity-80" />
@@ -101,10 +101,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p className="text-zinc-500 text-center md:text-left">
-            &copy; {currentYear} Mahadev Book. All rights reserved.
+            &copy; {currentYear} Mahadev Book. All rights reserved
           </p>
           <p className="text-zinc-600 max-w-xl text-center md:text-right font-light">
-            Mahadev Book is an educational sports insights platform. All content is for informational purposes only. Play responsibly and at your own risk.
+            Mahadev Book is an educational sports insights platform. All content provided for informational purposes only. Play sports betting responsibly.
           </p>
         </div>
       </div>

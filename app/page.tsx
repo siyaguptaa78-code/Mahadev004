@@ -15,22 +15,22 @@ const stats = [
 ];
 
 const games = [
-  { title: "Cricket Betting", desc: "Live IPL, International matches, T20 leagues with competitive odds and real-time markets.", icon: "🏏" },
-  { title: "Football Leagues", desc: "Bet on Premier League, Champions League, La Liga, and Indian Super League events.", icon: "⚽" },
-  { title: "Live Casino", desc: "Enjoy live dealer streams of Teen Patti, Andar Bahar, Roulette, and Poker from home.", icon: "🃏" },
-  { title: "Tennis Matches", desc: "Place real-time bets on Grand Slams, ATP tour, and WTA tour tournaments.", icon: "🎾" },
-  { title: "Virtual Sports", desc: "Fast-paced digital cricket, football and racing simulations available 24 hours a day.", icon: "🎮" }
+  { title: "Cricket Betting", desc: "Live IPL, International matches, T20 leagues etc. with best odds in the market", icon: "🏏" },
+  { title: "Football Leagues", desc: "Premier league, Champions league, League, Super league - bookmaker odds", icon: "⚽" },
+  { title: "Live Casino", desc: "Play live dealer streams of Teen Patti, Andar Bahar, Roulette and Poker from home", icon: "🃏" },
+  { title: "Tennis Matches", desc: "Real-time betting on Grand Slams, ATP, WTA and other major events", icon: "🎾" },
+  { title: "Virtual Sports", desc: "Digital cricket, football and horse racing events - fast-paced and available 24x7", icon: "🎮" }
 ];
 
 const features = [
-  { title: "Secure Payments", desc: "UPI, GPay, Paytm, PhonePe, and local bank transfers with 256-bit encryption.", icon: Shield },
-  { title: "Fast Payouts", desc: "Direct bank transfer withdrawals processed in 5-10 minutes flat.", icon: Zap },
-  { title: "Data Insights", desc: "Free prediction models, player stats, and historical head-to-head analysis.", icon: TrendingUp },
-  { title: "24/7 WhatsApp help", desc: "Dedicated personal relationship managers to assist you instantly.", icon: Headphones }
+  { title: "Secure payments", desc: "UPI, GPay, Paytm, PhonePe and local bank transfers using 256-bit encryption", icon: Shield },
+  { title: "Fast payouts", desc: "Direct bank transfers within 5-10 mins", icon: Zap },
+  { title: "Data insights", desc: "Free prediction models, player stats and head-to-head data", icon: TrendingUp },
+  { title: "24/7 WhatsApp assistance", desc: "Dedicated personal relationship managers to assist you around the clock", icon: Headphones }
 ];
 
 const reviews = [
-  { name: "Rahul S.", location: "Mumbai", comment: "Withdrawal credited within 5 minutes! Best platform I've used.", rating: 5 },
+  { name: "Rahul S.", location: "Mumbai", comment: "Withdrawal credited within 5 minutes! Best ever platform", rating: 5 },
   { name: "Priya K.", location: "Delhi", comment: "Got my ID the same day. Super smooth process and amazing support team!", rating: 5 },
   { name: "Vikram M.", location: "Bangalore", comment: "IPL betting experience was incredible. Real-time updates and fast payouts.", rating: 5 },
   { name: "Ankit T.", location: "Pune", comment: "100% genuine platform. I trust Mahadev Book for all my betting.", rating: 5 },
@@ -119,7 +119,7 @@ export default function Home() {
             Mahadev Book
           </h1>
           <p className="text-xl md:text-2xl text-cyan-100/80 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
-            Betting isn't just about chance; it's about timing, strategy, and choosing the right platform. Welcome to the safest betting experience.
+            Betting is a game of time, talent, and opportunity; where the user selects the right platform to gain from.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="py-24 max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">What is Mahadev Book?</h2>
-          <p className="text-cyan-100/60 max-w-2xl mx-auto">We bridge the gap between players and premier sportsbooks.</p>
+          <p className="text-cyan-100/60 max-w-2xl mx-auto">We bridge the gap between you and the world's best bookmakers by providing</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6">
