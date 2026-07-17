@@ -7,6 +7,7 @@ export interface BlogPost {
   icon: string;
   content: string;
   readTime: string;
+  redirectPath?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -114,6 +115,115 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Total Sixes:</strong> A fun market, particularly for high-scoring venues like Mumbai.</li>
       </ul>
       <p>Log into your Reddy Book ID to access live odds, in-play statistics, and instant bet slips for every ball of the series.</p>
+    `
+  },
+  {
+    slug: "highest-score-in-t20",
+    title: "Highest Score in T20: Records That Refuse to Fall",
+    excerpt: "The highest scores in T20 cricket — Gayle's 175*, Zimbabwe's 344, SRH's 287 and the records from the 2026 T20 World Cup. Individual and team records in one place.",
+    date: "July 14, 2026",
+    category: "Cricket",
+    icon: "🏏",
+    readTime: "6 min read",
+    redirectPath: "/highest-score-in-t20/",
+    content: `
+      <p>T20 batting records have been reinvented thrice over — impact players, 250 as par, teenagers clearing fences with abandon — but the individual record in the format has stood for thirteen years. Chris Gayle's 175 has outlived everything. Here are the highest individual and team scores in T20s, and how close the modern game has come to equaling them.</p>
+      
+      <h3>Highest Individual Scores in T20</h3>
+      <div class="overflow-x-auto my-6">
+        <table class="min-w-full border-collapse border border-zinc-800 text-left text-sm text-zinc-300">
+          <thead>
+            <tr class="bg-zinc-900 border-b border-zinc-800 text-zinc-400">
+              <th class="px-4 py-3 font-semibold">Score</th>
+              <th class="px-4 py-3 font-semibold">Player</th>
+              <th class="px-4 py-3 font-semibold">Match</th>
+              <th class="px-4 py-3 font-semibold">Year</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-900">
+            <tr>
+              <td class="px-4 py-3 font-medium text-white">175* (66 balls)</td>
+              <td class="px-4 py-3">Chris Gayle</td>
+              <td class="px-4 py-3">RCB vs Pune Warriors, IPL</td>
+              <td class="px-4 py-3">2013</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-white">172 (76 balls)</td>
+              <td class="px-4 py-3">Aaron Finch</td>
+              <td class="px-4 py-3">Australia vs Zimbabwe, T20I</td>
+              <td class="px-4 py-3">2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Gayle's 175 — 17 sixes, from a man who was nearly left out of the XI that morning — is the highest individual score in any form of T20, with Aaron Finch's 172 the highest in the T20I format. Both records have seen a decade of "he could break it tonight" innings, but Gayle's in particular has proved incredibly difficult to get close to, the closest attempts usually dying agonizingly in the 140s — because no one else gets 66 balls to himself.</p>
+
+      <h3>Highest Team Totals in T20</h3>
+      <div class="overflow-x-auto my-6">
+        <table class="min-w-full border-collapse border border-zinc-800 text-left text-sm text-zinc-300">
+          <thead>
+            <tr class="bg-zinc-900 border-b border-zinc-800 text-zinc-400">
+              <th class="px-4 py-3 font-semibold">Total</th>
+              <th class="px-4 py-3 font-semibold">Team</th>
+              <th class="px-4 py-3 font-semibold">Opponent</th>
+              <th class="px-4 py-3 font-semibold">Year</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-900">
+            <tr>
+              <td class="px-4 py-3 font-medium text-white">344/4</td>
+              <td class="px-4 py-3">Zimbabwe</td>
+              <td class="px-4 py-3">Gambia (T20I)</td>
+              <td class="px-4 py-3">2024</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-white">314/3</td>
+              <td class="px-4 py-3">Nepal</td>
+              <td class="px-4 py-3">Mongolia (T20I)</td>
+              <td class="px-4 py-3">2023</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3 font-medium text-white">287/3</td>
+              <td class="px-4 py-3">Sunrisers Hyderabad</td>
+              <td class="px-4 py-3">RCB (IPL)</td>
+              <td class="px-4 py-3">2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Zimbabwe's 344/4 against Gambia is the highest team total in any T20 match — only the second time 300 has ever been crossed in a men's T20I, after Nepal's 314. However, the most remarkable total in a genuinely competitive match was Sunrisers Hyderabad's 287/3 in the 2024 IPL, the highest team score in the competition. It was one of two times that SRH broke the IPL team record in the 2024 season.</p>
+
+      <h3>Highest Scores in the IPL</h3>
+      <p>As mentioned, Gayle's 175* is the highest individual score in the IPL, with Brendon McCullum's 158 in the very first IPL match in 2008 the innings that announced the league to the world. The highest team total is SRH's 287/3 from 2024. For a season-by-season breakdown of the run charts, see our <a href="/ipl-orange-cap-purple-cap-winners/">Orange Cap winners list</a> and <a href="/most-runs-in-ipl/">most runs in IPL</a> pages.</p>
+
+      <h3>T20 World Cup Highs</h3>
+      <p>The 2026 T20 World Cup saw two new additions to the list, with India's 255/5 in the final against New Zealand the highest team total in a T20 World Cup final, while Canada opener Yuvraj Samra made history as the youngest player to score a century in the tournament, his 110 coming against New Zealand in the group stage. However, the record individual score in a T20 World Cup remains Brendon McCullum's 123 against Bangladesh in 2012.</p>
+
+      <h3>Highest T20 Score FAQs</h3>
+      <div class="space-y-4">
+        <div>
+          <strong>What is the highest individual score in T20 cricket?</strong>
+          <p>The highest individual score in T20 cricket is Chris Gayle's unbeaten 175, scored for RCB against Pune Warriors in the 2013 IPL.</p>
+        </div>
+        <div>
+          <strong>What is the highest score in T20 internationals?</strong>
+          <p>The highest individual score in T20Is is Aaron Finch's 172 for Australia against Zimbabwe in 2018. The highest team total is Zimbabwe's 344/4 against Gambia in 2024.</p>
+        </div>
+        <div>
+          <strong>What is the highest team total in the IPL?</strong>
+          <p>The highest team total in the IPL is Sunrisers Hyderabad's 287/3 against RCB in 2024.</p>
+        </div>
+        <div>
+          <strong>What was the highest score in the 2026 T20 World Cup?</strong>
+          <p>India's 255/5 in the final against New Zealand is the highest team total in a T20 World Cup final. The highest individual score was Yuvraj Samra's 110 for Canada against New Zealand in the group stage.</p>
+        </div>
+        <div>
+          <strong>Has anyone scored a T20 double century?</strong>
+          <p>No one has scored a double century in a recognised T20 match, with Gayle's 175 the closest anyone has got.</p>
+        </div>
+      </div>
     `
   }
 ];
